@@ -1,0 +1,195 @@
+body {
+  background: #ccb7ab;
+}
+
+.wordle {
+  position: relative;
+  padding-top: 30px;
+}
+
+.header,
+.error-messages {
+  text-align: center;
+}
+
+@media (min-width: 350px) {
+  .header,
+  .error-messages {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .header,
+  .error-messages {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.header__text {
+  font-family: quicksand;
+  margin: 0 0 5px;
+  font-weight: 600;
+}
+
+.header__text--instructions {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.header__text--title {
+  color: white;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.gameboard {
+  margin: 0 auto 50px;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 350px) {
+  .gameboard {
+    max-width: 260px;
+  }
+}
+
+.gameboard__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.gameboard__block {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+  background: white;
+}
+
+@media (max-width: 350px) {
+  .gameboard__block {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.gameboard__block p {
+  font-family: quicksand;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 15px 0 0 0;
+}
+
+.gameboard__block--green, .gameboard__block--yellow, .gameboard__block--grey {
+  color: white;
+}
+
+.gameboard__block--green {
+  background: #CA8A14;
+}
+
+.gameboard__block--yellow {
+  background: #408DB5;
+}
+
+.gameboard__block--grey {
+  background: #7C7C7C;
+}
+
+.keypad {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.keypad__row {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.keypad__row:nth-of-type(2) {
+  max-width: 260px;
+  margin: 0 auto 5px;
+}
+
+.keypad__button {
+  min-width: 25px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.keypad__button:hover {
+  background: #BA8B70;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.keypad__button--green, .keypad__button--yellow, .keypad__button--grey {
+  color: white;
+}
+
+.keypad__button--grey {
+  background: #7C7C7C;
+}
+
+.keypad__button--yellow {
+  background: #408DB5;
+}
+
+.keypad__button--green {
+  background: #CA8A14;
+}
+
+.messages {
+  text-align: center;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto 30px;
+}
+
+.messages__text {
+  font-family: quicksand;
+  font-size: 40px;
+  line-height: 42px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.error-messages {
+  height: 50px;
+}
+
+.error-messages__text {
+  font-family: quicksand;
+  font-weight: 600;
+  font-style: italic;
+  padding: 10px;
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */
